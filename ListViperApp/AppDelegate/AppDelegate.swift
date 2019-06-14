@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let friendsListView = FriendsListWireframe.createFriendsListModule()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = friendsListView
+        window?.makeKeyAndVisible()
+
         return true
     }
 

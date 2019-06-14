@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yWr-yL-wj2">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Friends List-->
+        <scene sceneID="iNl-bf-4pq">
+            <objects>
+                <tableViewController id="bQ1-jD-Xn6" customClass="FriendsListViewController" customModule="ListViperApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uVX-Gk-IjM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellId" textLabel="K4Q-SZ-aju" detailTextLabel="GjL-EU-Ygi" style="IBUITableViewCellStyleSubtitle" id="UqB-Ae-J80" userLabel="cell">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UqB-Ae-J80" id="rCA-iw-A4E">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K4Q-SZ-aju">
+                                            <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GjL-EU-Ygi">
+                                            <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bQ1-jD-Xn6" id="PAn-AP-b1E"/>
+                            <outlet property="delegate" destination="bQ1-jD-Xn6" id="Qls-0S-C8Z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Friends List" id="fYG-i2-fYE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8Up-oF-Ap2">
+                            <connections>
+                                <action selector="addFriend:" destination="bQ1-jD-Xn6" id="tdr-iJ-n2Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBg-LU-gAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626.08695652173913" y="-62.276785714285708"/>
+        </scene>
+        <!--Friends Details-->
+        <scene sceneID="bGQ-Q1-8iA">
+            <objects>
+                <viewController storyboardIdentifier="FriendsListDetailViewController" id="8w6-ME-tWa" customClass="FriendsListDetailViewController" customModule="ListViperApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="edu-QQ-bfj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrc-5h-c7F">
+                                <rect key="frame" x="0.0" y="242" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAy-9H-uJh">
+                                <rect key="frame" x="0.0" y="301" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WlE-s0-WXQ" firstAttribute="trailing" secondItem="Vrc-5h-c7F" secondAttribute="trailing" id="C67-Tn-yU9"/>
+                            <constraint firstItem="pAy-9H-uJh" firstAttribute="leading" secondItem="WlE-s0-WXQ" secondAttribute="leading" id="CmM-Gw-KWx"/>
+                            <constraint firstItem="pAy-9H-uJh" firstAttribute="top" secondItem="Vrc-5h-c7F" secondAttribute="bottom" constant="38" id="duO-Wo-kt8"/>
+                            <constraint firstItem="WlE-s0-WXQ" firstAttribute="trailing" secondItem="pAy-9H-uJh" secondAttribute="trailing" id="f2t-v1-XLO"/>
+                            <constraint firstItem="Vrc-5h-c7F" firstAttribute="top" secondItem="WlE-s0-WXQ" secondAttribute="top" constant="154" id="nQJ-B6-tnq"/>
+                            <constraint firstItem="Vrc-5h-c7F" firstAttribute="leading" secondItem="WlE-s0-WXQ" secondAttribute="leading" id="nTa-Zq-nGZ"/>
+                            <constraint firstItem="pAy-9H-uJh" firstAttribute="top" secondItem="Vrc-5h-c7F" secondAttribute="bottom" constant="38" id="r0f-ue-pbk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WlE-s0-WXQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Friends Details" id="Lh1-oj-7nY">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="trash" id="6FY-uR-EfB">
+                                <color key="tintColor" red="0.89803921568627454" green="0.0" blue="0.31123217809217946" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="deleteFriend:" destination="8w6-ME-tWa" id="AIi-fP-9GR"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="edit" id="aHw-9v-HME">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="editFriend:" destination="8w6-ME-tWa" id="iHt-dx-FQv"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="pAy-9H-uJh" id="fVg-2P-exM"/>
+                        <outlet property="nameLabel" destination="Vrc-5h-c7F" id="nuN-l6-SZG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dat-sN-LG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298" y="-61"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="37y-ci-TeS">
+            <objects>
+                <navigationController storyboardIdentifier="FriendsListNavigation" automaticallyAdjustsScrollViewInsets="NO" id="yWr-yL-wj2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U3k-Yl-8wq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bQ1-jD-Xn6" kind="relationship" relationship="rootViewController" id="nDY-bP-lwY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GpE-iE-3lQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284.05797101449275" y="-62.276785714285708"/>
+        </scene>
+    </scenes>
+</document>

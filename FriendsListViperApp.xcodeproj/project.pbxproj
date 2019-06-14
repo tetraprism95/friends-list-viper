@@ -8,20 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		8B22747C22B1905B00946740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22747B22B1905B00946740 /* AppDelegate.swift */; };
-		8B22747E22B1905B00946740 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22747D22B1905B00946740 /* ViewController.swift */; };
+		8B22747E22B1905B00946740 /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22747D22B1905B00946740 /* FriendsListViewController.swift */; };
 		8B22748122B1905B00946740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B22747F22B1905B00946740 /* Main.storyboard */; };
 		8B22748322B1905C00946740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B22748222B1905C00946740 /* Assets.xcassets */; };
 		8B22748622B1905C00946740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B22748422B1905C00946740 /* LaunchScreen.storyboard */; };
+		8B22748F22B190E400946740 /* FriendsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22748E22B190E400946740 /* FriendsListPresenter.swift */; };
+		8B22749122B190F300946740 /* FriendsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22749022B190F300946740 /* FriendsListInteractor.swift */; };
+		8B22749322B190FB00946740 /* FriendsListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22749222B190FB00946740 /* FriendsListWireframe.swift */; };
+		8B22749622B1936100946740 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22749522B1936100946740 /* Friend.swift */; };
+		8B22749822B2A4E200946740 /* FriendsListInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22749722B2A4E200946740 /* FriendsListInterface.swift */; };
+		8B22749A22B2B41900946740 /* FriendGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22749922B2B41900946740 /* FriendGroup.swift */; };
+		8B22749D22B3E2C300946740 /* FriendsListDetailInterface .swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22749C22B3E2C300946740 /* FriendsListDetailInterface .swift */; };
+		8B22749F22B3E7F600946740 /* FriendsListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22749E22B3E7F600946740 /* FriendsListDetailViewController.swift */; };
+		8B2274A122B3EFB200946740 /* FriendsListDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2274A022B3EFB200946740 /* FriendsListDetailPresenter.swift */; };
+		8B2274A322B3F2F200946740 /* FriendsListDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2274A222B3F2F200946740 /* FriendsListDetailInteractor.swift */; };
+		8B2274A522B3F52200946740 /* FriendsListDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2274A422B3F52200946740 /* FriendsListDetailWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B22747822B1905B00946740 /* ListViperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListViperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B22747B22B1905B00946740 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B22747D22B1905B00946740 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B22747D22B1905B00946740 /* FriendsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
 		8B22748022B1905B00946740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B22748222B1905C00946740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B22748522B1905C00946740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B22748722B1905C00946740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B22748E22B190E400946740 /* FriendsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListPresenter.swift; sourceTree = "<group>"; };
+		8B22749022B190F300946740 /* FriendsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListInteractor.swift; sourceTree = "<group>"; };
+		8B22749222B190FB00946740 /* FriendsListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListWireframe.swift; sourceTree = "<group>"; };
+		8B22749522B1936100946740 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		8B22749722B2A4E200946740 /* FriendsListInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListInterface.swift; sourceTree = "<group>"; };
+		8B22749922B2B41900946740 /* FriendGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendGroup.swift; sourceTree = "<group>"; };
+		8B22749C22B3E2C300946740 /* FriendsListDetailInterface .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendsListDetailInterface .swift"; sourceTree = "<group>"; };
+		8B22749E22B3E7F600946740 /* FriendsListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListDetailViewController.swift; sourceTree = "<group>"; };
+		8B2274A022B3EFB200946740 /* FriendsListDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListDetailPresenter.swift; sourceTree = "<group>"; };
+		8B2274A222B3F2F200946740 /* FriendsListDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListDetailInteractor.swift; sourceTree = "<group>"; };
+		8B2274A422B3F52200946740 /* FriendsListDetailWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListDetailWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +76,65 @@
 		8B22747A22B1905B00946740 /* ListViperApp */ = {
 			isa = PBXGroup;
 			children = (
+				8B2274A622B3F8AF00946740 /* AppDelegate */,
+				8B2274A722B3F8BD00946740 /* Resources */,
+				8B22749422B1934C00946740 /* Entity */,
+				8B22748D22B1906400946740 /* FriendListModule */,
+				8B22749B22B3E16800946740 /* FriendsListDetailModule */,
+			);
+			path = ListViperApp;
+			sourceTree = "<group>";
+		};
+		8B22748D22B1906400946740 /* FriendListModule */ = {
+			isa = PBXGroup;
+			children = (
+				8B22747D22B1905B00946740 /* FriendsListViewController.swift */,
+				8B22748E22B190E400946740 /* FriendsListPresenter.swift */,
+				8B22749022B190F300946740 /* FriendsListInteractor.swift */,
+				8B22749222B190FB00946740 /* FriendsListWireframe.swift */,
+				8B22749722B2A4E200946740 /* FriendsListInterface.swift */,
+			);
+			path = FriendListModule;
+			sourceTree = "<group>";
+		};
+		8B22749422B1934C00946740 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8B22749522B1936100946740 /* Friend.swift */,
+				8B22749922B2B41900946740 /* FriendGroup.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		8B22749B22B3E16800946740 /* FriendsListDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				8B22749C22B3E2C300946740 /* FriendsListDetailInterface .swift */,
+				8B22749E22B3E7F600946740 /* FriendsListDetailViewController.swift */,
+				8B2274A022B3EFB200946740 /* FriendsListDetailPresenter.swift */,
+				8B2274A222B3F2F200946740 /* FriendsListDetailInteractor.swift */,
+				8B2274A422B3F52200946740 /* FriendsListDetailWireframe.swift */,
+			);
+			path = FriendsListDetailModule;
+			sourceTree = "<group>";
+		};
+		8B2274A622B3F8AF00946740 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
 				8B22747B22B1905B00946740 /* AppDelegate.swift */,
-				8B22747D22B1905B00946740 /* ViewController.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8B2274A722B3F8BD00946740 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				8B22747F22B1905B00946740 /* Main.storyboard */,
 				8B22748222B1905C00946740 /* Assets.xcassets */,
 				8B22748422B1905C00946740 /* LaunchScreen.storyboard */,
 				8B22748722B1905C00946740 /* Info.plist */,
 			);
-			path = ListViperApp;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +208,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B22747E22B1905B00946740 /* ViewController.swift in Sources */,
+				8B22749822B2A4E200946740 /* FriendsListInterface.swift in Sources */,
+				8B22749A22B2B41900946740 /* FriendGroup.swift in Sources */,
+				8B22747E22B1905B00946740 /* FriendsListViewController.swift in Sources */,
+				8B22749F22B3E7F600946740 /* FriendsListDetailViewController.swift in Sources */,
+				8B22749D22B3E2C300946740 /* FriendsListDetailInterface .swift in Sources */,
+				8B22748F22B190E400946740 /* FriendsListPresenter.swift in Sources */,
+				8B22749122B190F300946740 /* FriendsListInteractor.swift in Sources */,
+				8B2274A322B3F2F200946740 /* FriendsListDetailInteractor.swift in Sources */,
+				8B2274A122B3EFB200946740 /* FriendsListDetailPresenter.swift in Sources */,
+				8B22749622B1936100946740 /* Friend.swift in Sources */,
+				8B2274A522B3F52200946740 /* FriendsListDetailWireframe.swift in Sources */,
+				8B22749322B190FB00946740 /* FriendsListWireframe.swift in Sources */,
 				8B22747C22B1905B00946740 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YDD77FG77;
-				INFOPLIST_FILE = ListViperApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ListViperApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YDD77FG77;
-				INFOPLIST_FILE = ListViperApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ListViperApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
